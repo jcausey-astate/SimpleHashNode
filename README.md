@@ -2,7 +2,7 @@
 `SimpleHashNode` is a C++ implementation of the "node", the basic building block for a cryptographic hash chain (i.e. "Blockchain").  
 
 ## Information
-This repository contains the header `SimpleHashNode.h` and implementation `SimpleHashNode.h` as well as a demo/driver program to demonstrate their use (`main.cpp`).  It was created for fun, but I haven't had time to work on it further.
+This repository contains the header `SimpleHashNode.h` and implementation `SimpleHashNode.h` as well as a demo/driver program to demonstrate their use (`demo.cpp`).  It was created for fun, but I haven't had time to work on it further.
 
 To create a simple hash chain, you can use an STL container like `std::list` where the values are `SimpleHashNode` objects (see demo program).  Ideally, you would create a class to more specifically represent the hash chain and automatically check the integrity of the chain as nodes are added.  This work is left as an exercise for th reader for now.
 
@@ -19,11 +19,11 @@ git submodule update --init --recursive
 The demo can be built simply by running:
 
 ```bash
-clang++ -std=c++14 -o SHC_demo main.cpp SimpleHashChain.cpp
+clang++ -std=c++14 -o SHC_demo demo.cpp SimpleHashChain.cpp
 ```
 for the Clang compiler package, or
 ```bash
-clang++ -std=c++14 -o SHC_demo main.cpp SimpleHashChain.cpp
+clang++ -std=c++14 -o SHC_demo demo.cpp SimpleHashChain.cpp
 ```
 for the GNU compiler suite.  
 
